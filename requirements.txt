@@ -1,5 +1,6 @@
-# Schedule-AI Requirements
-# Core dependencies for scheduling system
+# ChronoSync Requirements
+# Harmonizing Academic Schedules
+# Core dependencies for the scheduling system
 
 pandas>=2.0.0
 numpy>=1.24.0

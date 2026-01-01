@@ -1,15 +1,15 @@
 <div align="center">
 
-# 🎓 Schedule-AI
+# ⏰ ChronoSync
 
-### **Intelligent Multi-Department University Course Scheduling System**
+### **Harmonizing Academic Schedules with Intelligence**
 
-*Sistem penjadwalan kuliah otomatis dengan algoritma greedy & constraint satisfaction untuk menghasilkan jadwal bebas konflik*
+*Advanced university course scheduling system - Harmonizing time, optimizing resources, eliminating conflicts*
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-green.svg)](https://pandas.pydata.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Production-success.svg)]()
+[![ChronoSync](https://img.shields.io/badge/ChronoSync-v2.0.1-7C3AED.svg)]()
+[![Python](https://img.shields.io/badge/Python-3.8%2B-1E40AF.svg)](https://www.python.org/)
+[![Status](https://img.shields.io/badge/Status-Production-10B981.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-F59E0B.svg)](LICENSE)
 
 [Fitur](#-fitur-utama) •
 [Instalasi](#-instalasi) •
@@ -24,7 +24,7 @@
 ## 📋 Daftar Isi
 
 - [Problem Statement](#-problem-statement)
-- [Solusi](#-solusi-schedule-ai)
+- [Solusi](#-solusi-chronosync)
 - [Fitur Utama](#-fitur-utama)
 - [Arsitektur Sistem](#-arsitektur-sistem)
 - [Algoritma Core](#-algoritma-core)
@@ -69,9 +69,9 @@ Penjadwalan kuliah untuk multi-program studi adalah **NP-Complete Problem** yang
 
 ---
 
-## 💡 Solusi: Schedule-AI
+## 💡 Solusi: ChronoSync
 
-**Schedule-AI** adalah sistem penjadwalan otomatis yang menggunakan **Greedy Algorithm + Constraint Satisfaction + Iterative Conflict Resolution** untuk menghasilkan jadwal kuliah bebas konflik dalam hitungan menit (bukan minggu).
+**ChronoSync** adalah sistem penjadwalan otomatis yang menggunakan **Greedy Algorithm + Constraint Satisfaction + Iterative Conflict Resolution** untuk menghasilkan jadwal kuliah bebas konflik dalam hitungan menit (bukan minggu).
 
 ### 🎯 Hasil yang Dicapai
 
@@ -337,7 +337,7 @@ Priority Hierarchy:
 
 ### 📊 Perbandingan dengan Sistem Lain
 
-| Aspek | Manual | Generic Scheduler | **Schedule-AI** |
+| Aspek | Manual | Generic Scheduler | **ChronoSync** |
 |-------|--------|-------------------|-----------------|
 | **Waktu Setup** | 2-4 minggu | 1-2 hari | **2-5 menit** ⚡ |
 | **Konflik Handling** | Manual check | Basic detection | **Auto-resolve iterative** |
@@ -349,28 +349,33 @@ Priority Hierarchy:
 | **Hybrid Mode** | ❌ No | ❌ No | **✅ Zoom + Luring** |
 | **Verification** | Manual | Basic | **14 tools** |
 | **Scalability** | ❌ Poor | ⚠️ Medium | **✅ Excellent** |
+| **Optimization** | ❌ No | ⚠️ Basic | **✅ Advanced (v2.1)** |
 
 ### 🎯 Unique Selling Points
 
 **1. Priority Preservation**
 - Sistem lain: Semua course equal priority
-- **Schedule-AI**: Multi-level priority, PWK fixed 100%
+- **ChronoSync**: Multi-level priority, PWK fixed 100%
 
 **2. Heterogeneous Constraints**
 - Sistem lain: One-size-fits-all rules
-- **Schedule-AI**: Per-program custom rules via YAML
+- **ChronoSync**: Per-program custom rules via YAML
 
 **3. Incremental Updates**
 - Sistem lain: Rebuild semua dari awal
-- **Schedule-AI**: Fine-tune tanpa rebuild
+- **ChronoSync**: Fine-tune tanpa rebuild
 
 **4. Conflict Resolution Intelligence**
 - Sistem lain: Fail jika ada conflict
-- **Schedule-AI**: Auto-resolve dengan iterative improvement
+- **ChronoSync**: Auto-resolve dengan iterative improvement
 
 **5. Indonesian University Focused**
 - Sistem lain: Generic international
-- **Schedule-AI**: Optimized untuk sistem SKS, MKDU, Regular/Non-Regular
+- **ChronoSync**: Optimized untuk sistem SKS, MKDU, Regular/Non-Regular
+
+**6. Future-Ready Optimization** (v2.1 Planned)
+- Sistem lain: Static scheduling
+- **ChronoSync**: Gap minimization, fixed instructor rooms, multi-objective optimization
 
 ---
 
@@ -502,8 +507,8 @@ pip atau conda
 
 **1️⃣ Clone Repository**
 ```bash
-git clone https://github.com/yourusername/schedule-ai.git
-cd schedule-ai
+git clone https://github.com/yourusername/chronosync.git
+cd chronosync
 ```
 
 **2️⃣ Install Dependencies**
@@ -1250,18 +1255,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If this project helps you, please consider giving it a ⭐!
 
-[![Star History](https://img.shields.io/github/stars/yourusername/schedule-ai?style=social)](https://github.com/yourusername/schedule-ai/stargazers)
+[![Star History](https://img.shields.io/github/stars/yourusername/chronosync?style=social)](https://github.com/yourusername/chronosync/stargazers)
 
 ---
 
 <div align="center">
 
-### 🎓 Schedule-AI
+### ⏰ ChronoSync
 
-**Intelligent University Course Scheduling Made Easy**
+**Harmonizing Academic Schedules**
 
 Built with ❤️ for Indonesian Universities
 
-[⬆ Back to Top](#-schedule-ai)
+[⬆ Back to Top](#-chronosync)
 
 </div>

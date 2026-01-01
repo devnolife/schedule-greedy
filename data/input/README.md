@@ -1,6 +1,6 @@
 # 📥 Input Data Directory
 
-Direktori ini berisi semua data input (data awal) untuk sistem penjadwalan.
+Direktori ini berisi semua data input (data awal) untuk ChronoSync.
 
 ## Struktur
 
@@ -28,7 +28,7 @@ input/
 - `Pengampuh MK T. Elektro.xlsx` - Data mata kuliah dan pengampu Teknik Elektro
 
 ### PWK (Urban Planning)
-- `jadwal pwk ganjil 2025 2026.xlsx` - **JADWAL TETAP PWK** (tidak boleh diubah oleh sistem)
+- `jadwal pwk ganjil 2025 2026.xlsx` - **JADWAL TETAP PWK** (tidak boleh diubah oleh ChronoSync)
 
 ### Arsitektur
 - `JADWAL GANJIL 25-26_ARSITEKTUR.xlsx` - Struktur mata kuliah Arsitektur
@@ -57,7 +57,7 @@ Setiap file Excel harus memiliki kolom-kolom berikut (dapat bervariasi):
 
 ## Catatan Penting
 
-1. **PWK memiliki jadwal tetap** - File PWK berisi jadwal yang sudah ditetapkan dan tidak akan diubah oleh sistem
+1. **PWK memiliki jadwal tetap** - File PWK berisi jadwal yang sudah ditetapkan dan tidak akan diubah oleh ChronoSync
 2. **MKDU hanya Sabtu** - Semua mata kuliah MKDU akan dijadwalkan pada hari Sabtu
 3. **Non-Reguler weekend** - Kelas non-reguler akan dijadwalkan di weekend (Sabtu/Minggu)
 4. **Semester 1 = Zoom** - Semua kelas semester 1 menggunakan Zoom (tidak perlu ruangan fisik)

@@ -10,14 +10,14 @@ readme_file = Path(__file__).parent / "README.md"
 long_description = readme_file.read_text(encoding="utf-8") if readme_file.exists() else ""
 
 setup(
-    name="schedule-ai",
-    version="2.0.0",
-    description="Sistem Penjadwalan Kuliah Otomatis Multi-Program Studi",
+    name="chronosync",
+    version="2.0.1",
+    description="ChronoSync - Harmonizing Academic Schedules with Intelligence",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Your Name",
     author_email="your.email@example.com",
-    url="https://github.com/yourusername/schedule-ai",
+    url="https://github.com/yourusername/chronosync",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     python_requires=">=3.8",
@@ -37,8 +37,8 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "schedule-ai=core.jadwal:main",
-            "schedule-finetune=scripts.interactive.finetune_interactive:main",
+            "chronosync=core.jadwal:main",
+            "chronosync-finetune=scripts.interactive.finetune_interactive:main",
         ],
     },
     classifiers=[
@@ -52,10 +52,10 @@ setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
     ],
-    keywords="scheduling university timetable course-scheduling constraint-satisfaction",
+    keywords="chronosync scheduling university timetable course-scheduling optimization constraint-satisfaction",
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/schedule-ai/issues",
-        "Source": "https://github.com/yourusername/schedule-ai",
-        "Documentation": "https://github.com/yourusername/schedule-ai/blob/main/README.md",
+        "Bug Reports": "https://github.com/yourusername/chronosync/issues",
+        "Source": "https://github.com/yourusername/chronosync",
+        "Documentation": "https://github.com/yourusername/chronosync/blob/main/README.md",
     },
 )

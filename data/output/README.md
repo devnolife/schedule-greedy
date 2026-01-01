@@ -1,6 +1,6 @@
 # 📤 Output Data Directory
 
-Direktori ini berisi semua hasil output (jadwal yang dihasilkan) dari sistem penjadwalan.
+Direktori ini berisi semua hasil output (jadwal yang dihasilkan) dari ChronoSync.
 
 ## Struktur
 

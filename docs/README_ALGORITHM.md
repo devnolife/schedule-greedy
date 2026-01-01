@@ -1,4 +1,4 @@
-# Sistem Penjadwalan Kuliah Terintegrasi
+# ChronoSync - Sistem Penjadwalan Kuliah Terintegrasi
 
 ## Algoritma yang Digunakan
 
