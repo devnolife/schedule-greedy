@@ -1,0 +1,91 @@
+# Schedule-AI Scheduling Constraints Configuration
+
+# Hard Constraints (must be satisfied)
+hard_constraints:
+  # Instructor constraints
+  instructor:
+    no_double_booking: true
+    description: "Instructor cannot teach multiple courses at the same time"
+
+  # Room constraints
+  room:
+    no_double_booking: true
+    description: "Room cannot be used for multiple courses at the same time"
+
+  # Student constraints
+  student:
+    no_conflicts: true
+    description: "Same student group cannot take multiple courses at same time"
+
+  # Time constraints
+  time:
+    semester_1_zoom_only: true
+    non_regular_weekend_only: true
+    mkdu_saturday_only: true
+    description: "Time-based constraints for different course types"
+
+# Soft Constraints (preferred but can be violated)
+soft_constraints:
+  # Distribution preferences
+  distribution:
+    prefer_morning_classes: false
+    avoid_friday_afternoon: false
+    balance_daily_load: true
+
+  # Room preferences
+  room_preferences:
+    prefer_smaller_rooms_for_small_classes: false
+    prefer_lab_rooms_for_practicum: true
+
+# Conflict resolution settings
+conflict_resolution:
+  max_iterations: 120
+  max_attempts_per_conflict: 10
+  priority_based_resolution: true
+
+  # Resolution strategies (in order of preference)
+  strategies:
+    - "move_lower_priority_course"
+    - "swap_time_slots"
+    - "change_room"
+    - "split_class"
+
+# Program-specific rules
+program_rules:
+  PWK:
+    fixed_schedule: true
+    priority: 100
+    can_be_moved: false
+
+  Informatika:
+    priority: 50
+    preferred_days: ["Senin", "Selasa", "Rabu", "Kamis", "Jumat"]
+    specializations:
+      - "AI & Data Science"
+      - "Software Engineering"
+
+  Arsitektur:
+    priority: 50
+    exclude_courses: ["Skripsi", "Thesis"]
+    preferred_days: ["Senin", "Selasa", "Rabu", "Kamis"]
+
+  Pengairan:
+    priority: 50
+    has_non_regular: true
+
+  Elektro:
+    priority: 50
+    has_non_regular: true
+
+  MKDU:
+    priority: 30
+    allowed_days: ["Sabtu"]
+    description: "General education courses"
+
+# Validation rules
+validation:
+  check_instructor_conflicts: true
+  check_room_conflicts: true
+  check_student_conflicts: true
+  check_time_constraints: true
+  generate_conflict_report: true
